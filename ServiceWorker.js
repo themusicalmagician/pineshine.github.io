@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Test-1.0";
 const contentToCache = [
-    "Build/pineshine.github.io.loader.js",
-    "Build/pineshine.github.io.framework.js",
-    "Build/pineshine.github.io.data",
-    "Build/pineshine.github.io.wasm",
+    "Build/BUILDS.loader.js",
+    "Build/BUILDS.framework.js",
+    "Build/BUILDS.data",
+    "Build/BUILDS.wasm",
     "TemplateData/style.css"
 
 ];

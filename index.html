@@ -9,8 +9,8 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
-    <div id="unity-container" style="position: absolute; width: 100%; height: 100%">
-      <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} style="width: 100%; height: 100%"></canvas>
+    <div id="unity-container">
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/pineshine.github.io.loader.js";
+      var loaderUrl = buildUrl + "/BUILDS.loader.js";
       var config = {
-        dataUrl: buildUrl + "/pineshine.github.io.data",
-        frameworkUrl: buildUrl + "/pineshine.github.io.framework.js",
-        codeUrl: buildUrl + "/pineshine.github.io.wasm",
+        dataUrl: buildUrl + "/BUILDS.data",
+        frameworkUrl: buildUrl + "/BUILDS.framework.js",
+        codeUrl: buildUrl + "/BUILDS.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Test",
@@ -97,15 +97,6 @@
           alert(message);
         });
       };
-
-      var lockFunction =  window.screen.orientation.lock;
-      if (lockFunction.call(window.screen.orientation, 'landscape')) {
-           console.log('Orientation locked')
-      } 
-      else {
-            console.error('There was a problem in locking the orientation')
-      } 
-      
       document.body.appendChild(script);
     </script>
   </body>
